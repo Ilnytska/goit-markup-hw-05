@@ -232,7 +232,9 @@ img {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
+}
+.list-features .item:nth-child(4) {
+  margin-right: 0px;
 }
 .list-features > .item::before {
   display: block;
@@ -262,11 +264,12 @@ img {
   color: var(--title-color);
   text-transform: uppercase;
   font-weight: 700;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-size: 14px;
 }
 .list-features > .item {
   width: 270px;
+  margin-right: 30px;
 }
 /*Чем мы занимаемся*/
 
@@ -281,7 +284,7 @@ img {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .jobs-section-list .item:nth-child(2) {
   padding-right: 30px;
@@ -644,14 +647,14 @@ img {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   border-radius: 4px;
   min-height: 581px;
   min-width: 528px;
   padding: 8px;
   background-color: #fff;
-  transform: translate(-50%, -35%);
+  transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .closing-modal {
